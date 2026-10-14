@@ -1,0 +1,55 @@
+{
+  "name": "heading-beacon",
+  "version": "1.0.0",
+  "description": "Audit heading structure in your built static site: exactly one visible H1, no skipped levels, no empty, generic, duplicate, image-only or overlong headings, H1 vs title agreement and site-wide duplicate H1s. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "heading-beacon": "bin/heading-beacon.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "heading",
+    "headings",
+    "h1",
+    "heading-structure",
+    "heading-hierarchy",
+    "seo",
+    "accessibility",
+    "static-site",
+    "html",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/heading-beacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/heading-beacon/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/heading-beacon#readme"
+}
