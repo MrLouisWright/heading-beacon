@@ -1,5 +1,7 @@
 # heading-beacon
 
+[![npm version](https://img.shields.io/npm/v/heading-beacon.svg)](https://www.npmjs.com/package/heading-beacon) [![CI](https://github.com/MrLouisWright/heading-beacon/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/heading-beacon/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/heading-beacon.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Audit the heading structure of your built static site: one visible H1 per page, a logical H1 → H2 → H3 outline, and headings that actually say something.
 
 Headings are the outline search engines, answer engines and screen readers use to understand a page. Templates quietly break that outline: a logo wrapped in an `<h1>` adds a second H1, a card component jumps from `<h2>` to `<h4>`, a CMS leaves an empty `<h2>` behind, or every section is called "Overview". `heading-beacon` reads every built HTML page and reports the file, line, severity and a **concrete fix** for each problem, before you deploy.
