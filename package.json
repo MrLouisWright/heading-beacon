@@ -1,6 +1,6 @@
 {
   "name": "heading-beacon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audit heading structure in your built static site: exactly one visible H1, no skipped levels, no empty, generic, duplicate, image-only or overlong headings, H1 vs title agreement and site-wide duplicate H1s. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
