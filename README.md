@@ -72,7 +72,7 @@ MEDIUM   index.html:1 / has 2 <h1> elements: "Welcome", "Second main heading her
 ## Options
 
 ```text
-heading-beacon 1.0.0 — audit heading structure in your built static site
+heading-beacon 1.0.1 — audit heading structure in your built static site
 
 Usage: heading-beacon [site-dir] [options]
 
@@ -176,12 +176,20 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev heading-beacon
+```
+
 ```js
 import { check, isGeneric } from "heading-beacon";
 const report = check("dist", { maxLength: 100 });
 console.log(report.counts);
 isGeneric("Introduction"); // true
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("heading-beacon")` from CommonJS.
 
 Types are included.
 
